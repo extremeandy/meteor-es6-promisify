@@ -1,0 +1,1 @@
+Promisify = Npm.require('es6-promisify');
