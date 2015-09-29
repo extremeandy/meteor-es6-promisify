@@ -8,13 +8,13 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.2.0.1');
-  api.use('promise');
+  api.use('ecmascript');
   api.use('cosmos:browserify@0.7.0', 'client');
 
   api.addFiles('promise-override.js');
-  api.addFiles('es6-promisify.js', 'server');
+  api.addFiles('es6-promisify_server.js', 'server');
   //.browserify.js extension is required due to a meteor bug to get it to handle properly. This will be fixed shortly.
-  api.addFiles('es6-promisify.browserify.js', 'client');
+  api.addFiles('es6-promisify_client.browserify.js', 'client');
 
   api.export('Promisify');
 });
