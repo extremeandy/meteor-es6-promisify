@@ -1,6 +1,6 @@
 Package.describe({
   name: 'extremeandy:es6-promisify',
-  version: '0.1.2',
+  version: '0.1.3',
   summary: 'es6-promisify for Meteor',
   git: 'https://github.com/extremeandy/meteor-es6-promisify',
   documentation: 'README.md'
