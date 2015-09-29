@@ -4,6 +4,8 @@ This package is a Meteor wrapper for the Node package [es6-promisify](https://gi
 
 It makes a 'Promisify' function available globally on both client and server.
 
+Note that it forces the use of the Meteor 'promise' package. It doesn't allow native Promise to be used.
+
 ## Usage
     var createUser = Promisify(Accounts.createUser);
     createUser({
